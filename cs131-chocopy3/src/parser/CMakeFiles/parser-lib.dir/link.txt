@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libparser-lib.a  CMakeFiles/parser-lib.dir/lex.yy.c.o CMakeFiles/parser-lib.dir/chocopy.tab.c.o CMakeFiles/parser-lib.dir/chocopy_parse.cpp.o CMakeFiles/parser-lib.dir/chocopy_ast.cpp.o CMakeFiles/parser-lib.dir/chocopy_logging.cpp.o
+/usr/bin/ranlib ../../libparser-lib.a

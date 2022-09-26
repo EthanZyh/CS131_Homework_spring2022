@@ -1,0 +1,24 @@
+stages:
+    - build
+    - grade-pa3
+
+build-job:
+    stage: build
+    tags:
+        - pa
+    script:
+        - mkdir build
+        - cd build
+        - cmake .. -G "Ninja"
+        - ninja ir-optimizer
+    artifacts: 
+        paths:
+            - build
+
+grade-pa1-job:
+    stage: grade-pa3
+    tags:
+        - linux
+    script:
+        - cd tests
+        - PATH=$PATH:/llvm/bin python3 /root/chocopy_test/duipai.py --pa 3

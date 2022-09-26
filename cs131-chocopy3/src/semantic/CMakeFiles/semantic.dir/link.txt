@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/semantic.dir/chocopy_semant.cpp.o  -o ../../semantic  -Wl,-rpath,/usr/local/lib ../../libparser-lib.a /usr/local/lib/libfmt.a /usr/local/lib/libcjson.so.1.7.15 -lm 

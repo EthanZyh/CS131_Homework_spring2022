@@ -1,0 +1,25 @@
+stages:
+    - build
+    - grade-pa2
+
+build-job:
+    stage: build
+    tags:
+        - pa
+    script:
+        - mkdir build
+        - cd build
+        - cmake .. -G "Ninja"
+        - ninja cjson_formatter
+        - ninja semantic
+    artifacts: 
+        paths:
+            - build
+
+grade-pa1-job:
+    stage: grade-pa2
+    tags:
+        - linux
+    script:
+        - cd tests
+        - python3 /root/chocopy_test/duipai.py --pa 2

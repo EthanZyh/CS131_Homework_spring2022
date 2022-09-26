@@ -1,0 +1,7 @@
+cmake-*
+chocopy_test
+build*
+.VSCode
+*.ll
+sample_out.txt
+mystudy

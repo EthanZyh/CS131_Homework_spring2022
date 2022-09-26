@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libsemantic-lib.a  CMakeFiles/semantic-lib.dir/chocopy_semant.cpp.o
+/usr/bin/ranlib ../../libsemantic-lib.a
